@@ -1,0 +1,91 @@
+<app-header></app-header>
+<div class="contener01">
+    <div class="SearchBox">
+      <input (change)="upload($event)" multiple type="file" />   
+    </div>    
+    <div class="viewer">
+      <div class="iconMenu">
+        <ul>
+          <li><a title="Search" (click)="chnageMenu('menu1')" [ngClass]="{'iconMenuActive iconMenuActiveColor': activeMenu1 == true}" href="javascript:void(0)" data-target="#menu1" > 
+          <i class="fa fa-search "></i>
+              Search</a>
+          </li>
+          <li><a title="Pattern" (click)="chnageMenu('menu2')" [ngClass]="{'iconMenuActive iconMenuActiveColor': activeMenu2 == true}" href="javascript:void(0)"> 
+            <i class="fa fa-th"></i>
+            Pattern</a>
+            </li>
+            <li><a title="Group" (click)="chnageMenu('menu3')" [ngClass]="{'iconMenuActive iconMenuActiveColor': activeMenu3 == true}"href="javascript:void(0)"> 
+              <i class="fa fa-group"></i>
+              Group</a>
+              </li>
+              <li><a title="Libraries" (click)="chnageMenu('menu4')" [ngClass]="{'iconMenuActive iconMenuActiveColor': activeMenu4 == true}" href="javascript:void(0)"> 
+                <i class="fa fa-bookmark"></i>
+                Libraries</a>
+                </li>
+                <li><a title="Template" (click)="chnageMenu('menu5')" [ngClass]="{'iconMenuActive iconMenuActiveColor': activeMenu5 == true}" href="javascript:void(0)"> 
+                  <i class="fa fa-file"></i>
+                  Templates</a>
+                  </li>
+        </ul>
+      </div>
+
+      <div class="viewerRight">
+
+        <div *ngIf="activeMenu1">
+          <div class="LeftSerchSection">
+            <app-tags [tags]="lstSearchText" 
+            (tagAdded)="onTagAdded($event)"
+            (tagRemoved)="onTagRemoved($event)"></app-tags>
+            <!-- <input type="text" [(ngModel)]="searchedText" class="FiendInput"> -->
+            <!-- <button  class="searchButton" type="button" (click)="search()"><i class="fa fa-search" aria-hidden="true"></i> </button> -->
+          </div>
+         
+          <input type="checkbox" [(ngModel)]="isMatchCase"> Match Case
+          <div class="iconBox">
+            <button type="button" (click)="search()" class="search">Search</button>
+            <button type="button" (click)="redact()" class="apply">Apply Redact</button>
+            <!-- <button type="button" (click)="download()" class="download">Download</button>
+            <button type="button" (click)="reload()" class="refresh">refresh</button> -->
+          </div>
+        </div>
+        <div *ngIf="activeMenu2">Menu 2</div>
+        <div *ngIf="activeMenu3">Menu 3</div>
+        <div *ngIf="activeMenu4">Menu 4</div>
+        <div *ngIf="activeMenu5">Menu 5</div>
+      </div>
+
+      <div class="viewerLeft">
+    
+        <div id="outerContainer">
+          <h5>Web Viewer                 
+            <a title="Refresh" class="createButton-h" (click)="reload()">
+            <i class="fa fa-refresh" ></i> 
+           </a>
+          
+           <a title="Download" class="createButton-h" (click)="download()">
+            <i class="fa fa-download"></i> 
+           </a>
+          </h5> 
+          <div class="pdf-container">
+            <pdf-viewer
+              [src]="pdfSrc"
+              [rotation]="0"
+              [original-size]="false"
+              [show-all]="true"
+              [fit-to-page]="false"
+              [zoom]="1"
+              [zoom-scale]="'page-width'"
+              [stick-to-page]="false"
+              [render-text]="true"
+              [external-link-target]="'blank'"
+              [autoresize]="true"
+              [show-borders]="false"
+              style="width: 100%; height: 600px;"
+            ></pdf-viewer>
+          </div>
+        </div>
+      </div>
+  
+    </div>   
+</div>
+<app-footer></app-footer>

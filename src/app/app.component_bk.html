@@ -1,0 +1,53 @@
+<h1>Redaction Tool</h1>
+
+<!-- <input (change)="upload($event)" multiple type="file" /> -->
+
+<div class="">
+  <div class="row m-tb-30">
+    <div class="col-md-2">
+      <h2 class="select_file_text"> Choose a File</h2>
+    </div>
+    <div class="col-md-10">
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" lang="pl-Pl" (change)="upload($event)">
+        <!-- <label class="custom-file-label" for="customFileLang" >sddsf</label> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+<div id="outerContainer">
+  <div class="pdf-container">
+    <pdf-viewer
+      [src]="pdfSrc"
+      [rotation]="0"
+      [original-size]="false"
+      [show-all]="true"
+      [fit-to-page]="false"
+      [zoom]="1"
+      [zoom-scale]="'page-width'"
+      [stick-to-page]="false"
+      [render-text]="true"
+      [external-link-target]="'blank'"
+      [autoresize]="true"
+      [show-borders]="false"
+      style="width: 50%; height: 600px;"
+    ></pdf-viewer>
+  </div>
+</div>
+
+
+
+<input type="text" [(ngModel)]="searchedText">
+<button type="button" (click)="search()">Search</button>
+<button type="button" (click)="redact()">Apply Redact</button>
+<button type="button" (click)="download()">Download</button>
+<!-- <object [data]="file" type="application/pdf">
+        <embed [src]="file" type="application/pdf" />
+    </object> -->
+<!-- <pdf-viewer [src]="pdfSrc" [render-text]="true" style="display: block;"></pdf-viewer>  -->
+
+
+
+<router-outlet></router-outlet>

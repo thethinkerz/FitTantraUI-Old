@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,700,400italic,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
+@font-face {
+    font-family: 'bebasNeuebold';
+    src: url('../fonts/bebasneue_bold-webfont.eot');
+    src: url('../fonts/bebasneue_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue_bold-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue_bold-webfont.woff') format('woff'),
+         url('../fonts/bebasneue_bold-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue_bold-webfont.svg#bebas_neuebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+ font-family: LatoLight;
+ src: url("../fonts/Lato-Lig.eot");
+ src: url("../fonts/Lato-Lig.ttf");
+}
+
+@font-face {
+ font-family: Roboto-Light;
+ src: url("../fonts/Roboto-Light.eot");
+ src: url("../fonts/Roboto-Light.ttf");
+}
+@font-face {
+ font-family: Oswald-Regular;
+ src: url("../fonts/Oswald-Regular.eot");
+ src: url("../fonts/Oswald-Regular.ttf");
+}
+
+
+@font-face {
+
+    font-family: 'oswaldbook';
+
+    src: url('../fonts/oswald-regular-webfont.eot');
+
+    src: url('../fonts/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('../fonts/oswald-regular-webfont.woff') format('woff'),
+
+         url('../fonts/oswald-regular-webfont.ttf') format('truetype'),
+
+         url('../fonts/oswald-regular-webfont.svg#oswaldbook') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'MyriadProBold';
+	src: url('../fonts/pro-bold-webfont.eot');
+	src: url('../fonts/pro-bold-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/pro-bold-webfont.woff') format('woff'),  url('../fonts/pro-bold-webfont.ttf') format('truetype'),  url('../fonts/pro-bold-webfont.svg#MyriadProBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansRegular';
+	src: url('../fonts/OpenSans-Regular-webfont.eot');
+	src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),  url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),  url('../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansSemibold';
+	src: url('../fonts/OpenSans-Semibold-webfont.eot');
+	src: url('../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'),  url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),  url('../fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansBold';
+	src: url('../fonts/OpenSans-Bold-webfont.eot');
+	src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),  url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),  url('../fonts/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
